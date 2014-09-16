@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="im.jianghu.enableusbstoragemode.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tip_restart" />
+
+    <TextView
+        android:id="@+id/curMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="当前模式：" />
+
+    <Button
+        android:id="@+id/gotoUsbMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gotoMtpMode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="切换到USB存储模式" />
+
+    <Button
+        android:id="@+id/gotoMtpMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/curMode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="切换到MTP模式" />
+
+    <Button
+        android:id="@+id/rebootBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gotoUsbMode"
+        android:layout_below="@+id/gotoUsbMode"
+        android:layout_marginTop="20dp"
+        android:text="重启手机" />
+
+</RelativeLayout>
